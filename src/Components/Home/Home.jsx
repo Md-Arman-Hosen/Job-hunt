@@ -1,9 +1,9 @@
 import user from "../../assets/images/user.png"
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
-import JobCategory from "../JobCategory/jobCategory";
+import JobsCatagory from "../JobsCategory/JobsCatagory";
 const Home = () => {
     return (
-        <banner>
+        <div>
             <div className="md:flex  bg-teal-50/40">
                 <div className="mx-12">
                     <h1 className="md:text-7xl text-4xl pb-6 font-bold text-wrap">One Step <br /> Closer To Your
@@ -16,10 +16,10 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <JobCategory></JobCategory>
+                <JobsCatagory></JobsCatagory>
                 <FeaturedJobs></FeaturedJobs>
             </div>
-        </banner>
+        </div>
     );
 };
 
