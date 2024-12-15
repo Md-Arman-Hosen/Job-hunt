@@ -1,7 +1,7 @@
 import social from "../../assets/icons/social.png"
 const Footer = () => {
     return (
-        <footer className="footer bg-base-200 text-base-content p-10">
+        <footer className="footer bg-base-200 text-base-content p-10 px-36">
             <aside>
                <figure> <img src={social} alt="" /> </figure>
                 <p>

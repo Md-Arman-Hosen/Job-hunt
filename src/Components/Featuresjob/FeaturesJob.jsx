@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { CiLocationOn,CiDollar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 const FeaturesJob = ({ job }) => {
-    const { logo,job_title,company_name,location,salary} = job;
+    const {id, logo,job_title,company_name,location,salary} = job;
     return (
         <div>
             <div className="card card-compact bg-base-100 shadow p-6">
@@ -24,7 +25,9 @@ const FeaturesJob = ({ job }) => {
                     </span> Salary: {salary}</p>
                    </div>
                     <div className="card-actions">
-                        <button className="btn bg-cyan-400 text-white">View Details</button>
+                      <Link to={`/job/${id}`}>
+                      <button className="btn bg-cyan-400 text-white">View Details</button>
+                      </Link>
                     </div>
                 </div>
             </div>        </div>
