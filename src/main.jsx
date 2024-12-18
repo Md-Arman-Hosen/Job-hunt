@@ -11,6 +11,7 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blogs from './Components/Blogs/Blogs';
 import Statistics from './Components/Statistics/Statistics';
 import JobDetails from './Components/JobDetails/JobDetails';
+import Login from './LogInForm/Login';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         path: "/job/:id",
         element: <JobDetails></JobDetails>,
         loader:()=> fetch('../jobs.json')
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
       },
     ]
   },
