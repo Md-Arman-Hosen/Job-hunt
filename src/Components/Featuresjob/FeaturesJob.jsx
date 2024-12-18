@@ -2,7 +2,7 @@
 import { CiLocationOn,CiDollar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const FeaturesJob = ({ job }) => {
-    const {id, logo,job_title,company_name,location,salary} = job;
+    const {id, logo,job_title,company_name,location,salary,remote_or_onsite} = job;
     return (
         <div>
             <div className="card card-compact bg-base-100 shadow p-6">
@@ -15,7 +15,7 @@ const FeaturesJob = ({ job }) => {
                     <h2 className="card-title">{job_title}</h2>
                     <p>{company_name}</p>
                    <div className="flex gap-2">
-                   <button className="btn">Remote</button>
+                   <button className="btn">{remote_or_onsite}</button>
                    <button className="btn">Full Time</button>
                    </div>
                    <div className="flex">
@@ -30,7 +30,9 @@ const FeaturesJob = ({ job }) => {
                       </Link>
                     </div>
                 </div>
-            </div>        </div>
+            </div>        
+        
+        </div>
     );
 };
 
