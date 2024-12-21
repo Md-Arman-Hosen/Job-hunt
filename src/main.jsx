@@ -12,7 +12,6 @@ import Blogs from './Components/Blogs/Blogs';
 import Statistics from './Components/Statistics/Statistics';
 import JobDetails from './Components/JobDetails/JobDetails';
 import Login from './LogInForm/Login';
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
     ]
   },
