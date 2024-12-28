@@ -12,6 +12,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Statistics from './Components/Statistics/Statistics';
 import JobDetails from './Components/JobDetails/JobDetails';
 import Login from './LogInForm/Login';
+import SignUp from './SIgnUP/SignUp';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/signUp",
+        element: <SignUp></SignUp>,
       },
     ]
   },
